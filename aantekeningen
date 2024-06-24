@@ -1,0 +1,37 @@
+je kan een functie meegeven aan een event, maar dan is het lastig om later evets samen te voegen.
+dat is handig als er meerdere lijnen elkaar kruisen, wat nogal eens gebeurt.
+
+misschien is het te doen door de functie van het event aan te passen?
+
+plan: sweepline
+ maak een algemeene sweepline implementatie
+
+ een event
+_________________
+dingen dingen dingen
+
+een staat kan een vaste grote hebben omdat alle lijnen over de hele breete lopen
+dus het aantal lijnen dat de sweepline kruisen blijft constant
+dus een np array? van referenties?
+verder heb je events nodig die refereren naar een aantal lijnen die naast elkaar liggen
+dus dat kan met twee indexen??
+moet de sweepline state weten welke events betrekking hebben op welke index??
+wel als je graag events wil gaan samenvoegen, want dan moet je ze kunnen vinden
+
+opties voor state: array, list of linked list. 'object' is een np type
+
+ergens is het ook best eenvoudig omdat je maar een soort event hebt
+het enige wat er gebeurt is dat er twee lijnen kruisen.
+wil ik de optimalizatie door voeren van meerdere lijnen die elkaar tegelijk kruisen,
+of kan ik dat beter bewaren tot later?
+
+ik kan stoppen als er geen events meer in de queue zitten, dus daar ik ook niks voor nodig
+
+lastig: incrementeel beoordelen hoe goed een lijn is.
+dat is misschien nog wel het lastigste. meteen doen of bewaren tot later? generiek maken met ABC?
+
+functie duaal te simpel om een functie van te maken?
+
+gebruik named tuples? anders haal ik de punten en de lijnen misschien door elkaar
+
+het lastige is misschien dat al die lijnen eigenlijk punten zijn.
